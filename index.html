@@ -2,9 +2,206 @@
 <html>
  <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="st/HMCL.ico" type="image/x-icon">
-    <title>MineRealm|Welecom</title>
- </head>
- <body>
- <a href="https://202005565320.github.io/hw3/">第三次作业</a>
- </body>
+    <link rel="shortcut icon" href="st/item/HMCL.ico" type="image/x-icon">
+    <title>MineRealm|WebHW</title>
+    <style type="text/css">
+    body 
+   {
+     background-image:url(st/bg/2019-07-28-999593.jpeg); 
+     background-repeat:no-repeat; 
+     background-attachment:fixed;
+     background-size:100% 100%;
+   }
+    span
+   {
+     color: #ff00bf;
+     text-shadow: 10px 10px 10px #ffffff;
+     font-size: 18px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-style:italic
+   }
+    ul
+   {
+     list-style-type:none;
+     padding:0;
+   }
+   img
+    { 
+      display: block;
+      max-height:100%;
+      max-width:100%;
+      -webkit-user-drag: none;
+    } 
+    .img
+    {
+       height:fit-content;
+       width:fit-content;
+    }
+   .mask 
+    {
+     background-color: #252525;
+     color: #252525;
+     transition: color 0.1s;
+    }
+    .mask:hover
+    {
+     color: #ffffff;
+    }
+    a:link {color:#000000;}      
+    a:visited {color:rgb(0, 0, 0);}  
+    a:hover {color:#ff0000;}  
+    a:active {color:#ff00dd;}
+    a
+    {
+      text-decoration:none;
+    }
+    </style>
+    <style>
+    *
+   {margin: 0px;}
+   .head
+  {
+    position:fixed;
+    display:-webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color:  rgb(195, 245, 252);
+  }
+   .body
+  {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 1440px;
+    background-color: rgb(255, 255, 255);
+    opacity:0.5; 
+  }
+  .foot
+  {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 1440px;
+    background-color: rgb(255, 255, 255);
+    background-image:url(st/bg/2017-07-24-916567.jpeg); 
+    background-repeat:no-repeat; 
+    background-attachment:fixed;
+    background-size:100% 100%;
+  }
+  .tc
+  { 
+    width: 100px;
+    height: 50px;
+    opacity:0.5;
+    background-image: url(st/bg/2019-07-28-999592.jpeg);
+  }
+   .ico
+  { 
+    width: 100px;
+    height: 50px;
+    opacity:0.5;
+  }
+  .l
+  { 
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: #74006e 10px 10px 10px ;
+    background-color: #ffd900;
+    border-radius: 10px;
+    opacity:0.2;
+  }
+   .it
+  {
+    width: 336px;
+    height: 200px;
+    margin-top:500px;
+    margin-left:1000px;
+    background-image:url(st/bg/2019-07-28-999592.jpeg);
+    border-radius: 5%;
+    box-shadow:#252525 10px 10px 10px;
+    text-align:center;
+    border-style:double;
+    border-color: #ffffff;
+  }
+   .ct
+  {
+    width:33%;
+    height:50%;
+    background-color: #ffffff;
+    border-style: ridge;
+    box-shadow: #252525;
+  }   
+    .overlay
+   {
+    position:absolute;
+    top:50px;
+    bottom:100%;
+    left:0%;
+    background-color:#2e8e9a;
+    overflow:hidden;
+    width:100px;
+    height:50px;
+    transition: 0.5s ease;
+   }
+   .overlay:hover
+   {
+    bottom:0;
+    height:100%;
+   }
+   .text
+   {
+    white-space:nowrap;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    position:absolute;
+    overflow:hidden;
+    top:40%;
+    transform:translate(-50%,-50%);
+    font-weight:bold;
+   }
+    </style>
+</head>
+<body>
+  <div class="head">
+  <div class="ico"><img class="img" src="st/item/mr.png"></div>
+  </div>
+  <div class="body">
+    <div class="it">
+      <br><br>
+     <span> 欢迎您浏览我的Web作业,<br>
+            有任何批评建议请您联系我,<br>
+            我的邮箱地址是:<br>
+            <b>3244287580@qq.com</b>
+     </span>
+     <div class="overlay">
+       <span class="text">
+          <ul>
+            <li><div class="tc"><a href="https://202005565320.github.io/hw1/" target="_blank">1</a></div></li>
+            <li><div class="tc"><a href="https://202005565320.github.io/hw2/" target="_blank">2</a></div></li>
+            <li><div class="tc"><a href="https://202005565320.github.io/hw3/" target="_blank">3</a></div></li>
+            <li><div class="tc"><a href="https://202005565320.github.io/hw4/" target="_blank">4~new!</a></div></li>
+            <li><div class="ico">（尚无）</div></li>
+            <li><div class="ico">（尚无）</div></li>
+            <li><div class="ico">WebWork</div></li>
+            <li><div class="ico"></div></li>
+            <li><div class="ico">By</div></li>
+            <li><div class="ico">Yuan</div></li>
+            <li><div class="ico">Wen</div></li>
+            <li><div class="ico">20</div></li>
+          </ul>
+       </span>
+     </div>
+    </div> 
+  </div>
+  <div class="foot">
+    <div class="ct"><img class="img" src="st/img/2017-08-17-920293.jpeg"></div>
+    <div class="ct"><img class="img" src="st/img/2018-02-19-951518.jpeg"></div>
+    <div class="ct"><img class="img" src="st/img/2019-02-26-984609.png"></div>
+  </div>
+</body>
+<footer>
+  <audio src="bgm/Old Memory.mp3" autoplay loop></audio>
+</footer>
