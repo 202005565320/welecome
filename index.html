@@ -2,193 +2,42 @@
 <html>
  <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="st/HMCL.ico" type="image/x-icon">
-    <title>MineRealm|星城·长沙</title>
-    <style>
-    /* 分块 */
-  .head
-  {
-    align-content: center;
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height: 180px;
-    background-color: rgb(195, 245, 252);
-  }
-  .foot
-  {
-    align-content: center;
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height: 25px;
-    background-color: rgb(195, 245, 252);
-  }
-  .head- 
-  {
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height: 40px;
-    background-color: rgb(150, 250, 242);
-  }
-  .headd-
-  {
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height: 40px;
-    background-color: rgb(150, 250, 242);
-  }
-  .container1
-  {
-    align-content: center;
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height:700px;
-    background-color: rgb(195, 245, 252);
-  }
-  .content 
-  {
-	position: relative;
-	width: 100%;
-	height: 100%;
-  }
-  .content li 
-  {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-position: center;
-				background-clip: border-box;
-				background-size: cover;
-	}
-  #li1~li{display: none;}
-  #li1 {background-image: url(st/jzz.jpg);}
-	#li2 {background-image: url(st/yls.jpg);}
-	#li3 {background-image: url(st/hgd.jpg);}
-	#li4 {background-image: url(st/jggz.jpg);}
-	#li5 {background-image: url(st/tpj.jpg);}
-  #li1:target,
-	#li2:target,
-	#li3:target,
-	#li4:target,
-	#li5:target
-  {
-	display: block;
-	}
-  .conlist 
+    <link rel="shortcut icon" href="st/item/HMCL.ico" type="image/x-icon">
+    <title>MineRealm|WebHW</title>
+    <style type="text/css">
+    body 
+   {
+     background-image:url(st/bg/2019-07-28-999593.jpeg); 
+     background-repeat:no-repeat; 
+     background-attachment:fixed;
+     background-size:100% 100%;
+   }
+    span
+   {
+     color: #ff00bf;
+     text-shadow: 10px 10px 10px #ffffff;
+     font-size: 18px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-style:italic
+   }
+    ul
+   {
+     list-style-type:none;
+     padding:0;
+   }
+   img
+    { 
+      display: block;
+      max-height:100%;
+      max-width:100%;
+      -webkit-user-drag: none;
+    } 
+    .img
     {
-		position: absolute;
-		bottom: 0;
-	}
-	.conlist li 
-    {
-  	position: relative;
-  	width: 70px;
-  	height:70px;
-  	display: block;
-  	border: 3px solid #fff;
-  	border-radius: 10px;
-	  margin-right: 10px;
-	}
-  .conlist a 
-  {
-	  position: absolute;
-	  display: block;
-	  width: 50px;
-	  height:50px;
-  	border: 3px solid #fff;
-  	border-radius: 75px;
-  	background-position: center;
-	  background-clip: border-box;
-  	background-size: cover;
-	  left: 10%;
-  	top: 0%;
-	}
-  .a1 {background-image: url(st/jzz.jpg);}
-	.a2 {background-image: url(st/yls.jpg);}
-	.a3 {background-image: url(st/hgd.jpg);}
-	.a4 {background-image: url(st/jggz.jpg);}
-	.a5 {background-image: url(st/tpj.jpg);}
-  .container 
-  {
-    align-content: center;
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height: 155px;
-    background-color: rgb(195, 245, 252);
-  }
-  .item 
-  {
-    position:relative;
-    width: 20%;
-    height: 125px;
-    margin: 10px;
-    border-radius: 6%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: #666464 3px 5px 3px;
-  }
-  .item2
-  {
-    align-items: center;
-    width: 20%;
-    height: 30px;
-    margin: 5px 5px 100px;
-    border-radius: 15%;
-    background-color: rgb(243, 198, 235);
-  }
-   /* 隐藏 */
-  .overlay
-   {
-    position:absolute;
-    border-radius: 6%;
-    bottom:100%;
-    left:0;
-    right:0;
-    background-color:#2e8e9a;
-    overflow:hidden;
-    width:100%;
-    height:0;
-    transition: 0.5s ease;
-   }
-   .item:hover .overlay
-   {
-    bottom:0;
-    height:100%;
-    opacity:0.7;
-   }
-   .text
-   {
-    white-space:nowrap;
-    color:white;
-    font-size:20px;
-    position:absolute;
-    overflow:hidden;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    font-weight:bold;
-   }
-   /* 文本 */
-  .sl
-  {
-    text-shadow: 2px 1px #ffffff;
-    writing-mode:vertical-rl;
-    color: rgb(0, 0, 0);
-    margin: 10px auto;
-  }
-  span
-   {
-      color: #fa76ef;
-      text-shadow: 5px 5px 5px #ffa9e9;
-   }
-    /* 你知道得太多了！！！*/
-    .mask 
+       height:fit-content;
+       width:fit-content;
+    }
+   .mask 
     {
      background-color: #252525;
      color: #252525;
@@ -198,201 +47,161 @@
     {
      color: #ffffff;
     }
-    /* 图片 */
-    img
-    { 
-      border-radius: 6%;
-      display: block;
-      max-height:100%;
-      max-width:100%;
-    } 
-    .img
+    a:link {color:#000000;}      
+    a:visited {color:rgb(0, 0, 0);}  
+    a:hover {color:#ff0000;}  
+    a:active {color:#ff00dd;}
+    a
     {
-       height:fit-content;
-       width:fit-content;
+      text-decoration:none;
     }
-    .item:hover 
-    .img
-    {
-      opacity:0.6;
-    }
-    /* 关键帧 */
-    .float
-    {
-     margin:10px auto;
-     width:200px;
-     height:10px;
-     background-color:#fdfdfd;
-     box-shadow: 0 0 10px #fffffffb inset;
-     -webkit-animation-name:'wh';
-     -webkit-animation-duration:1.75s;
-     -webkit-animation-timing-function:ease-in-out;
-     -webkit-animation-delay:0s;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-direction: alternate;
-    }
-    @keyframes wh
-    {
-     0% 
-     {
-      width:800px;
-      height:0px;
-     }
-    100% 
-     {
-      width:1000px;
-      height:0px;
-     } 
-    }
-   /* 链接状态 */
-   a:link {color:#f596e8;}      
-   a:visited {color:rgb(150, 250, 242);}  
-   a:hover {color:#ffffff;}  
-   a:active {color:#0000FF;}
-   </style>
- </head>
- <body>
-   <div class="headd-"><B><div class="float"><span>“天文长沙一星，在轸四星之侧。上为辰象，下为郡县。”</span></B><sub class="mask" title="你知道得太多了！！">————[唐]张谓</sub></div></div>
-   <audio src="" hidden="true" autoplay="true" loop="true" loop="1000"></audio>
-   <div class="container2">
-
-   </div>
-   <div class="head">
-    <p class="sl">
-    <b>沁园春·长沙</b><br><sub>———毛泽东</sub><br><br>
-     独立寒秋，<br>
-     湘江北去，<br>
-     橘子洲头。<br>
-     看万山红遍，<br>
-     层林尽染；<br>
-     漫江碧透，<br>
-     百舸争流。<br>
-     鹰击长空，<br>
-     鱼翔浅底，<br>
-     万类霜天竞自由。<br>
-     怅寥廓，<br>
-     问苍茫大地，<br>
-     谁主沉浮？<br>
-     携来百侣曾游，<br>
-     忆往昔峥嵘岁月稠。<br>
-     恰同学少年，<br>
-     风华正茂；<br>
-     书生意气，<br>
-     挥斥方遒。<br>
-     指点江山，<br>
-     激扬文字，<br>
-     粪土当年万户侯。<br>
-     曾记否，<br>
-     到中流击水，<br>
-     浪遏飞舟？
-    </p>
-   </div>
-   <div class="head-"><p><b>[醉·眼|镜头下的TOP 5]</b></p><div class="float"><a href="https://www.mcmod.cn/" target="_blank"><span>人文风光尽收眼底</span></a></div></div>
-   <div class="container1">
-      <ul class="content">
-          <li id="li1"></li>
-          <li id="li2"></li>
-          <li id="li3"></li>
-          <li id="li4"></li>
-          <li id="li5"></li>
-      </ul>
+    </style>
+    <style>
+    *
+   {margin: 0px;}
+   .head
+  {
+    position:fixed;
+    display:-webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color:  rgb(195, 245, 252);
+  }
+   .body
+  {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 1440px;
+    background-color: rgb(255, 255, 255);
+    opacity:0.5; 
+  }
+  .foot
+  {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 1440px;
+    background-color: rgb(255, 255, 255);
+    background-image:url(st/bg/2017-07-24-916567.jpeg); 
+    background-repeat:no-repeat; 
+    background-attachment:fixed;
+    background-size:100% 100%;
+  }
+  .tc
+  { 
+    width: 100px;
+    height: 50px;
+    opacity:0.5;
+    background-image: url(st/bg/2019-07-28-999592.jpeg);
+  }
+   .ico
+  { 
+    width: 100px;
+    height: 50px;
+    opacity:0.5;
+  }
+  .l
+  { 
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: #74006e 10px 10px 10px ;
+    background-color: #ffd900;
+    border-radius: 10px;
+    opacity:0.2;
+  }
+   .it
+  {
+    width: 336px;
+    height: 200px;
+    margin-top:500px;
+    margin-left:1000px;
+    background-image:url(st/bg/2019-07-28-999592.jpeg);
+    border-radius: 5%;
+    box-shadow:#252525 10px 10px 10px;
+    text-align:center;
+    border-style:double;
+    border-color: #ffffff;
+  }
+   .ct
+  {
+    width:33%;
+    height:50%;
+    background-color: #ffffff;
+    border-style: ridge;
+    box-shadow: #252525;
+  }   
+    .overlay
+   {
+    position:absolute;
+    top:50px;
+    bottom:100%;
+    left:0%;
+    background-color:#ffffff;
+    overflow:hidden;
+    width:100px;
+    height:50px;
+    transition: 0.5s ease;
+   }
+   .overlay:hover
+   {
+    bottom:0;
+    height:100%;
+   }
+   .text
+   {
+    white-space:nowrap;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    position:absolute;
+    overflow:hidden;
+    top:40%;
+    transform:translate(-50%,-50%);
+    font-weight:bold;
+   }
+    </style>
+</head>
+<body>
+  <div class="head">
+  <div class="ico"><img class="img" src="st/item/mr.png"></div>
+  </div>
+  <div class="body">
+    <div class="it">
+      <br><br>
+     <span> 欢迎您浏览我的Web作业,<br>
+            有任何批评建议请您联系我,<br>
+            我的邮箱地址是:<br>
+            <b>3244287580@qq.com</b>
+     </span>
+     <div class="overlay">
+       <span class="text">
+          <ul>
+            <li><div class="tc"><a href="https://202005565320.github.io/hw1/" target="_blank">1</a></div></li>
+            <li><div class="tc"><a href="https://202005565320.github.io/hw2/" target="_blank">2</a></div></li>
+            <li><div class="tc"><a href="https://202005565320.github.io/hw3/" target="_blank">3</a></div></li>
+            <li><div class="tc"><a href="https://202005565320.github.io/hw4/" target="_blank">4~new!</a></div></li>
+            <li><div class="ico"></div></li>
+            <li><div class="ico"></div></li>
+            <li><div class="ico">WebWork</div></li>
+            <li><div class="ico"></div></li>
+            <li><div class="ico">By</div></li>
+            <li><div class="ico">Yuan</div></li>
+            <li><div class="ico">Wen</div></li>
+            <li><div class="ico">20</div></li>
+          </ul>
+       </span>
      </div>
-     <div class="head-">
-      <ul class="conlist">
-          <li><a href="#li1" class="a1"></a></li>
-          <li><a href="#li2" class="a2"></a></li>
-          <li><a href="#li3" class="a3"></a></li>
-          <li><a href="#li4" class="a4"></a></li>
-          <li><a href="#li5" class="a5"></a></li>
-      </ul>
-     </div>
-   </div>
-   <div class="head-"><p><b>[垂·涎|舌尖上的TOP 10]</b></p><div class="float"><a href="https://www.mcmod.cn/" target="_blank"><span>美味佳肴皆入口中</span></a></div></div>
-   <div class="container">
-    <div class="item">
-       <img class="img" src="st/1.png">
-       <div class='overlay'>
-         <div class='text'><a href="https://baike.baidu.com/item/%E7%B3%96%E6%B2%B9%E7%B2%91%E7%B2%91" target="_blank">[点我]糖油粑粑查看]</a></div>
-       </div>
-    </div>
-    <div class="item">
-      <img class="img" src="st/2.png">
-      <div class='overlay'>
-        <div class='text'><a href="https://baike.baidu.com/item/%E5%8F%A3%E5%91%B3%E8%99%BE" target="_blank">[点我]口味虾[查看]</a></div>
-      </div>
-   </div>
-   <div class="item">
-      <img class="img" src="st/3.png">
-      <div class='overlay'>
-        <div class='text'><a href="https://baike.baidu.com/item/%E5%8F%A3%E5%91%B3%E8%9F%B9" target="_blank">[点我]口味蟹[查看]</a></div>
-      </div>
-   </div>
-   <div class="item">
-      <img class="img" src="st/4.png">
-      <div class='overlay'>
-        <div class='text'><a href="https://baike.baidu.com/item/%E7%81%AB%E5%AE%AB%E6%AE%BF%E8%87%AD%E8%B1%86%E8%85%90" target="_blank">[点我]臭豆腐[查看]</a></div>
-      </div>
-   </div>
-   <div class="item">
-      <img class="img" src="st/5.png">
-      <div class='overlay'>
-        <div class='text'><a href="https://baike.baidu.com/item/%E5%97%8D%E8%9E%BA" target="_blank">[点我]嗍螺[查看]</a></div>
-      </div>
-   </div>
-   </div>
-
-   <div class="head-">
-       <div class="item2">“一点都不舌甘”</div>
-       <div class="item2">“疯狂”</div>
-       <div class="item2">“这也能抗结核？”</div>
-       <div class="item2">“味之有余美，玉食勿与传”</div>
-       <div class="item2">“嗦之肉出，欲罢不能”</div>
-   </div>
-
-   <div class="container">
-      <div class="item">
-         <img class="img" src="st/6.png">
-         <div class='overlay'>
-           <div class='text'><a href="https://baike.baidu.com/item/%E9%85%B1%E6%9D%BF%E9%B8%AD" target="_blank">[点我]酱板鸭[查看]</a></div>
-         </div>
-      </div>
-      <div class="item">
-         <img class="img" src="st/7.png">
-         <div class='overlay'>
-           <div class='text'><a href="https://baike.baidu.com/item/%E7%BA%A2%E7%83%A7%E7%8C%AA%E8%84%9A" target="_blank">[点我]红烧猪脚[查看]</a></div>
-         </div>
-      </div>
-      <div class="item">
-         <img class="img" src="st/8.png">
-         <div class='overlay'>
-           <div class='text'><a href="https://baike.baidu.com/item/%E9%95%BF%E6%B2%99%E7%B1%B3%E7%B2%89/9615024" target="_blank">[点我]长沙米粉[查看]</a></div>
-         </div>
-      </div>
-      <div class="item">
-         <img class="img" src="st/9.png">
-         <div class='overlay'>
-           <div class='text'><a href="https://baike.baidu.com/item/%E5%88%AE%E5%87%89%E7%B2%89" target="_blank">[点我]刮凉粉[查看]</a></div>
-         </div>
-      </div>
-      <div class="item">
-         <img class="img" src="st/10.png">
-         <div class='overlay'>
-           <div class='text'><a href="https://baike.baidu.com/item/%E5%BE%B7%E5%9B%AD%E5%8C%85%E5%AD%90" target="_blank">[点我]德园包子[查看]</a></div>
-         </div>
-      </div>
-    </div>
-
-    <div class="head-">
-      <div class="item2">“皮酥酱香，回味悠长”</div>
-      <div class="item2">“争似红楼富家户，猪蹄烂熟劝郎尝”</div>
-      <div class="item2">“好粉汤来造”</div>
-      <div class="item2">口味酸辣，清凉爽滑</div>
-      <div class="item2">“四眼大包银丝卷”</div>
-    </div>
-
- </body>
- <footer> 
-    <div class="head-"><p><b>[沉·梦|千年古城，前世今生]</b></p><div class="float"><a href="https://www.mcmod.cn/" target="_blank"><span>历史洪流滚滚向前</span></a></div></div>
-    <div class="foot"><a href="https://baike.baidu.com/item/%E9%95%BF%E6%B2%99/204237?fr=aladdin" target="_blank"><li><span><b>[戳一戳]➡百度——永远滴神！</b></span></li></a></div>
-    <img src="st/cs.png" alt="" width="100%">
- </footer>
+    </div> 
+  </div>
+  <div class="foot">
+    <div class="ct"><img class="img" src="st/img/2017-08-17-920293.jpeg"></div>
+    <div class="ct"><img class="img" src="st/img/2018-02-19-951518.jpeg"></div>
+    <div class="ct"><img class="img" src="st/img/2019-02-26-984609.png"></div>
+  </div>
+</body>
+<footer>
+  <audio src="bgm/Old Memory.mp3" autoplay loop></audio>
+</footer>
